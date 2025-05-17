@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Prelog.master.cs" Inherits="PROJECTSITE.Prelog" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WASHOP</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body style="background-color: black; margin: 10; padding: 0; height: 100vh;">
+    <form id="form2" runat="server">
+            <div style="margin: 0 100px; height: 100%;">
+
+            
+
+            <asp:Panel ID="Panel2" runat="server" BackColor="Transparent" Height="52px"
+                Style="display: flex; align-items: center; justify-content: flex-start; gap: 40px;">
+
+
+                <!-- <img src="IMAGES/logo.png" alt="Logo"
+                 style="width: 55px; height: 55px; object-fit: contain;" /> -->
+                
+                <asp:Button ID="Button1" runat="server" Text="Registration" 
+                    Style="background-color: transparent; border: none; color: white; font-size: 20px; font-family: 'Inter', sans-serif; height: 26px; transition: text-shadow 0.6s ease;" 
+                    onmouseover="this.style.textShadow='0 0 2px white, 0 0 10px white, 0 0 5px white'; this.style.cursor='pointer';" 
+                    onmouseout="this.style.textShadow='none';" OnClick="Button1_Click" />
+
+                <asp:Button ID="Button2" runat="server" Text="Login" 
+                    Style="background-color: transparent; border: none; color: white; font-size: 20px; font-family: 'Inter', sans-serif; height: 26px; transition: text-shadow 0.6s ease;" 
+                    onmouseover="this.style.textShadow='0 0 2px white, 0 0 10px white, 0 0 5px white'; this.style.cursor='pointer';" 
+                    onmouseout="this.style.textShadow='none';" OnClick="Button2_Click" />
+
+                <asp:Button ID="Button3" runat="server" Text="Administrator" 
+                    Style="background-color: transparent; border: none; color: white; font-size: 20px; font-family: 'Inter', sans-serif; height: 26px; transition: text-shadow 0.6s ease;" 
+                    onmouseover="this.style.textShadow='0 0 2px white, 0 0 10px white, 0 0 5px white'; this.style.cursor='pointer';" 
+                    onmouseout="this.style.textShadow='none';" OnClick="Button3_Click" />
+
+                
+
+            </asp:Panel>
+                
+
+        </div>
+
+        <div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+        </div>
+        
+    </form>
+</body>
+</html>
